@@ -1,0 +1,29 @@
+# My Webpage
+
+This project is a simple webpage that features a button labeled "start". When clicked, the button triggers a confetti effect in green color that continues until the page is refreshed.
+
+## Project Structure
+
+```
+my-webpage
+├── index.html      # The main HTML file containing the structure of the webpage
+├── styles.css      # The CSS file for styling the webpage
+├── script.js       # The JavaScript file that handles the confetti effect
+└── README.md       # This documentation file
+```
+
+## How to Run the Webpage
+
+1. Clone the repository or download the project files.
+2. Open the `index.html` file in a web browser.
+3. Click the "start" button to see the confetti effect.
+
+## Functionality
+
+- The webpage displays a centered button.
+- Clicking the button initiates a continuous green confetti effect.
+- The confetti will keep falling until the page is refreshed.
+
+## Additional Information
+
+- The confetti elements are styled using CSS animations.
