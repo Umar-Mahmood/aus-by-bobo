@@ -1,6 +1,6 @@
 # My Webpage
 
-This project is a simple webpage that features a button labeled "start". When clicked, the button triggers a confetti effect in green color that continues until the page is refreshed.
+This project is a simple webpage that features a button labeled "start". When clicked, the button triggers a confetti effect in various shapes and colors that continues until the page is refreshed.
 
 ## Project Structure
 
@@ -21,9 +21,14 @@ my-webpage
 ## Functionality
 
 - The webpage displays a centered button.
-- Clicking the button initiates a continuous green confetti effect.
+- Clicking the button initiates a continuous confetti effect with various shapes and colors.
 - The confetti will keep falling until the page is refreshed.
 
 ## Additional Information
 
 - The confetti elements are styled using CSS animations.
+- The confetti shapes include squares, rectangles, triangles, and diamonds.
+
+## Screenshot
+
+![Confetti Effect](../path/to/your/image.png)
