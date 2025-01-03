@@ -31,4 +31,4 @@ my-webpage
 
 ## Screenshot
 
-![Confetti Effect](../path/to/your/image.png)
+![Confetti Effect](./ss/Confetti.png)
