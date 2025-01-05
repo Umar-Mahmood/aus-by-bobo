@@ -124,10 +124,10 @@ chromeTabControls.addEventListener("mousedown", function (e) {
 });
 */
 
-// Ensure the Chrome tab stays on top
-chromeTab.addEventListener("mousedown", function () {
-  chromeTab.style.zIndex = 1001;
-});
+// // Ensure the Chrome tab stays on top
+// chromeTab.addEventListener("mousedown", function () {
+//   chromeTab.style.zIndex = 1001;
+// });
 
 // Make desktop folders movable and selectable
 const folders = document.querySelectorAll(".desktop-folder");
@@ -164,5 +164,9 @@ folders.forEach((folder) => {
   folder.addEventListener("click", function () {
     folders.forEach((f) => f.classList.remove("selected"));
     folder.classList.add("selected");
+
+    if (folder.id === "folder6") {
+      window.open("confetti.html", "_blank");
+    }
   });
 });
