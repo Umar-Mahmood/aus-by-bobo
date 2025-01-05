@@ -47,6 +47,15 @@ document
       chromeTab.style.display === "none" ? "block" : "none";
   });
 
+// Handle click event on Terminal icon
+document
+  .querySelector('.bottom-icon[alt="Terminal"]')
+  .addEventListener("click", function () {
+    const terminal = document.getElementById("terminal");
+    terminal.style.display =
+      terminal.style.display === "none" ? "block" : "none";
+  });
+
 // Handle minimize button click
 document.getElementById("minimize-btn").addEventListener("click", function () {
   const chromeTab = document.getElementById("chrome-tab");
@@ -72,6 +81,14 @@ document.getElementById("close-btn").addEventListener("click", function () {
   const chromeTab = document.getElementById("chrome-tab");
   chromeTab.style.display = "none";
 });
+
+// Handle close button click for terminal
+document
+  .getElementById("terminal-close-btn")
+  .addEventListener("click", function () {
+    const terminal = document.getElementById("terminal");
+    terminal.style.display = "none";
+  });
 
 // Commented out the code for drag and drop functionality
 /*
