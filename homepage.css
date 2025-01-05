@@ -229,3 +229,69 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+
+.desktop-folder {
+  position: absolute;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.desktop-folder.selected {
+  border: 2px solid #00aaff;
+  border-radius: 5px;
+  background-color: rgba(0, 170, 255, 0.2);
+}
+
+#folder1 {
+  top: 40px;
+  left: 10px;
+}
+#folder2 {
+  top: 120px;
+  left: 10px;
+}
+#folder3 {
+  top: 200px;
+  left: 10px;
+}
+#folder4 {
+  top: 280px;
+  left: 10px;
+}
+#folder5 {
+  top: 360px;
+  left: 10px;
+}
+#folder6 {
+  top: 40px;
+  left: 90px;
+}
+#folder7 {
+  top: 120px;
+  left: 90px;
+}
+#folder8 {
+  top: 200px;
+  left: 90px;
+}
+#folder9 {
+  top: 280px;
+  left: 90px;
+}
+#folder10 {
+  top: 360px;
+  left: 90px;
+}
+
+.desktop-folder img {
+  width: 60px;
+  height: 60px;
+}
+
+.folder-name {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+}

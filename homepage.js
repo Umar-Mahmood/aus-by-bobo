@@ -128,3 +128,41 @@ chromeTabControls.addEventListener("mousedown", function (e) {
 chromeTab.addEventListener("mousedown", function () {
   chromeTab.style.zIndex = 1001;
 });
+
+// Make desktop folders movable and selectable
+const folders = document.querySelectorAll(".desktop-folder");
+
+folders.forEach((folder) => {
+  folder.addEventListener("mousedown", function (e) {
+    let shiftX = e.clientX - folder.getBoundingClientRect().left;
+    let shiftY = e.clientY - folder.getBoundingClientRect().top;
+
+    function moveAt(pageX, pageY) {
+      folder.style.left = pageX - shiftX + "px";
+      folder.style.top = pageY - shiftY + "px";
+    }
+
+    function onMouseMove(event) {
+      moveAt(event.pageX, event.pageY);
+    }
+
+    document.addEventListener("mousemove", onMouseMove);
+
+    document.addEventListener(
+      "mouseup",
+      function () {
+        document.removeEventListener("mousemove", onMouseMove);
+      },
+      { once: true }
+    );
+
+    folder.ondragstart = function () {
+      return false;
+    };
+  });
+
+  folder.addEventListener("click", function () {
+    folders.forEach((f) => f.classList.remove("selected"));
+    folder.classList.add("selected");
+  });
+});
