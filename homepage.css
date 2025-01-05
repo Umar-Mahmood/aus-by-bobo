@@ -6,7 +6,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("./backgrounds/macOS-Big-Sur-After-Dawn.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,12 +16,48 @@ body {
   width: 100%;
   height: 100%;
 }
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.029);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  gap: 15px;
+}
+.navbar ul li {
+  display: inline;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+}
 .container {
   text-align: center;
 }
-h1 {
+.main-heading {
   color: #333;
 }
-p {
+.description {
   color: #666;
+}
+.bold {
+  font-weight: bold;
+}
+.apple-icon {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  filter: invert(1);
+  margin-left: 5px;
 }
