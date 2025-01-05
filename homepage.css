@@ -61,3 +61,66 @@ body {
   filter: invert(1);
   margin-left: 5px;
 }
+.bottom-bar {
+  position: absolute;
+  bottom: 0;
+  height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(255, 255, 255, 0.24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin-bottom: 15px;
+}
+.bottom-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+.bottom-bar ul li {
+  display: inline;
+}
+.bottom-icon {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+.bottom-icon:hover {
+  transform: scale(1.5);
+}
+.calendar-icon {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 10px;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+.calendar-icon:hover {
+  transform: scale(1.5);
+}
+.calendar-icon .month {
+  font-size: 8px;
+}
+.calendar-icon .date {
+  font-size: 12px;
+}
+.separator {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0 10px;
+}
